@@ -9,6 +9,7 @@
 
   You might want to go through the HTML file while keeping the final web-page opened along side to get a rough idea of how it all works.
 <hr/> <hr/>
+
 *   **Task 2: HTML & CSS**
   
   Your task is to create a web page that matches the example given here. Your page must match mine exactly in terms of semantics, aesthetics and format. You have the creative freedom to choose your fonts, colors and obviously the contents.
@@ -18,7 +19,7 @@
 
   **Here is what you have to make**
 
-  ![MAKE THIS](https://raw.githubusercontent.com/sypai/Endgame/task1-git/Task2.png)
+  ![MAKE THIS](https://github.com/sypai/Endgame/blob/master/task1-Git/Task2.png)
 
   What will be the judging criteria?
   1.    HTML5 syntax, with semantic tags. HEAD, BODY, HEADER, NAV, 3 SECTIONS(Intro, Idols, Achievements), FOOTER(In case you want to get into designing-add YOUR logo) 
