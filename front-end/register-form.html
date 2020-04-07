@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ET&T</title>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">   
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body id="register-form">
+   <div class="content">
+    <header class="nav-bg fixed-top">
+        <div class="container account-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="/assets/img/etnt_logo.png" id="logo" alt="GEC Raipur">
+            </a>
+    </header>
+
+    <div class="my-wrap wrap-1">
+        <div class="container register-card">
+            <div class="card">    
+                <h3 class="card-header head">Register</h3>
+                <div class="card-header progress">
+                    <span class="is-active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="card-bodies">
+                    <div class="card-body card-body-step-1 is-showing">
+                        <div class="container-fluid">
+                            <div class="card-title">
+                                Tell us about yourself!
+                            </div>
+                            
+                            <form>
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <label for="firstname">First Name</label>
+                                        <input name="firstname" type="text" autocomplete="off">
+                                        <!-- <input name="firstname" type="text" required autocomplete="off"> -->
+                                    </div>
+    
+                                    <div class="col-sm-6">
+                                        <label for="lastname">Last Name</label>
+                                        <input name="lastname" type="text" autocomplete="off">
+                                        <!-- <input name="lastname" type="text" required autocomplete="off"> -->
+                                    </div>
+    
+                                    <div class="col-sm-6">
+                                        <label for="email">Email <span>(Will be verified later)</span></label>
+                                        <input name="email" type="email" autocomplete="off">
+                                        <!-- <input name="email" type="email" required autocomplete="off"> -->
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                    <!-- TODO: Use intl-tel -->
+                                    <label for="student-phone">Mobile Number</label>
+                                    <input name="phone" type="tel" required autocomplete="off">
+                                    <!-- <input name="phone" type="tel" required autocomplete="off"> -->
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="roll">Roll Number</label>
+                                        <input name="roll" type="text" autocomplete="off">
+                                        <!-- <input name="roll" type="text" required autocomplete="off"> -->
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <label for="enroll">Enrollment Number</label>
+                                        <input name="enroll" type="text" autocomplete="off">
+                                        <!-- <input name="enroll" type="text" required autocomplete="off"> -->
+                                    </div>
+                                
+                                    <!-- <div class="col-md-6">
+                                        <label for="batch">Graduation Year</label>
+                                        <input name="batch" type="month" autocomplete="off">
+                                            <input name="batch" type="month" required autocomplete="off"> -->
+                                    <!-- </div> -->
+                                        
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="dark-btn clicker">Continue <i class="fas fa-arrow-circle-right"></i></button>
+                                        <!-- <button type="submit" class="dark-btn" onclick="trigger()">Next</!-->
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card-body card-body-step-2">
+                        <div class="card-title">
+                            Academic Details
+                        </div>
+
+                        <form>
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <h5 class="subsec" >Class 10th (SSC)</h5>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <label for="tenth-roll">Board</label>
+                                    <select class="board select-css" name="board" form="acad-info-info">
+                                        <option value="cbse">Choose your Board of Examination</option>
+                                        <option value="cbse">Central Board of Secondary Education (CBSE)</option>
+                                        <option value="icse">Indian Council of Secondary Education(ICSE)</option>
+                                        <option value="cg">Chhattisgarh Board of Secondary Education(CG Board)</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4 col-xs-6">
+                                    <label for="tenth-roll">Roll Number</label>
+                                    <input name="tenth-roll" type="text" autocomplete="off">
+                                    <!-- <input name="tenth-roll" type="text" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-md-4 col-xs-6">
+                                    <label for="tenth-cent">Percentage (%)</label>
+                                    <input name="tenth-cent" type="text" autocomplete="off">
+                                    <!-- <input name="tenth-cent" type="text" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-md-12">
+                                    <h5 class="subsec" >Class 12th (HSC)</h5>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="tenth-roll">Board</label>
+                                    <select class="board select-css" name="board" form="acad-info-info">
+                                        <option value="cbse">Choose your Board of Examination</option>
+                                        <option value="cbse">Central Board of Secondary Education (CBSE)</option>
+                                        <option value="icse">Indian Council of Secondary Education(ICSE)</option>
+                                        <option value="cg">Chhattisgarh Board of Secondary Education(CG Board)</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4 col-xs-6">
+                                    <label for="twelth-roll">Roll Number</label>
+                                    <input name="twelth-roll" type="text" autocomplete="off">
+                                    <!-- <input name="twelth-roll" type="text" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-md-4 col-xs-6">
+                                    <label for="twelth-cent">Percentage (%)</label>
+                                    <input name="twelth-cent" type="text" autocomplete="off">
+                                    <!-- <input name="twelth-cent" type="text" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-md-12">
+                                    <h5 class="subsec">Chhattisgarh Pre-Engineering Test (CGPET)</h5>
+                                </div>
+                            
+                                <div class="col-sm-6">
+                                    <label for="pet-roll">Roll Number</label>
+                                    <input name="pet-roll" type="text" autocomplete="off">
+                                    <!-- <input name="pet-roll" type="text" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="pet-rank">Rank</label>
+                                    <input name="pet-rank" type="text" autocomplete="off">
+                                    <!-- <input name="pet-rank" type="text" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <button type="button" class="dark-btn clicker">Next <i class="fas fa-arrow-circle-right"></i></button>
+                                    <!-- <button type="submit" class="dark-btn" onclick="trigger()">Next</!-->
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card-body card-body-step-3">
+                        <div class="card-title">
+                            Family Details
+                        </div>
+
+                        <form action="">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <h5 class="subsec" >Father's Information</h5>
+                            </div>
+                            
+                            <div class="col-sm-6 col-md-6">
+
+                            <label for="father-first">First Name</label>                              
+                            <input name="father-first" type="text" required autocomplete="off">
+                            <!-- <input name="father-first" type="text" required autocomplete="off"> -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-6">
+                                <label for="father-last">Last Name</label>
+                            <input name="father-last" type="text" required autocomplete="off">
+                            <!-- <input name="father-last" type="text" required autocomplete="off"> -->
+                            </div>
+                            
+                            <div class="col-sm-6 col-md-6">
+                                <label for="father-job">Occupation</label>
+                            <input name="father-job" type="text" required autocomplete="off">
+                            <!-- <input name="father-job" type="text" required autocomplete="off"> -->
+
+                            </div>
+
+                            <div class="col-sm-6 col-md-6">
+                                <!-- TODO: Use intl-tel -->
+                            <label for="father-phone">Mobile Number</label>
+                            <input name="father-phone" type="tel" required autocomplete="off">
+                            <!-- <input name="father-phone" type="tel" required autocomplete="off"> -->
+                            </div>
+
+                            <div class="col-md-12">
+                                <h5 class="subsec" >Mother's Information</h5>
+                            </div>
+                            
+                            <div class="col-sm-6 col-md-6">
+                                <label for="mother-first">First Name</label>
+                            <input name="mother-first" type="text" required autocomplete="off">
+                            <!-- <input name="mother-first" type="text" required autocomplete="off"> -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-6">
+                                <label for="mother-last">Last Name</label>
+                            <input name="mother-last" type="text" required autocomplete="off">
+                            <!-- <input name="mother-last" type="text" required autocomplete="off"> -->
+                            </div>
+                            
+                            <div class="col-sm-6 col-md-6">
+                                <label for="mother-job">Occupation</label>
+                            <input name="mother-job" type="text" required autocomplete="off">
+                            <!-- <input name="mother-job" type="text" required autocomplete="off"> -->
+
+                            </div>
+                            
+                            <div class="col-sm-6 col-md-6">
+                                <!-- TODO: Use intl-tel -->
+                            <label for="mother-phone">Mobile Number</label>
+                            <input name="mother-phone" type="tel" required autocomplete="off">
+                            <!-- <input name="mother-phone" type="tel" required autocomplete="off"> -->
+
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="dark-btn clicker">One more <i class="fas fa-arrow-circle-right"></i></button>
+                                <!-- <button type="submit" class="dark-btn">One more</button> -->
+                            </div>
+                            
+                        </div>
+                        </form>
+                    </div>
+
+                    <div class="card-body card-body-step-4 ">
+                        <div class="card-title">
+                            Personal Information
+                        </div>
+
+                        <!-- <div class="card-text">
+                            Just a little more about you!
+                        </div> -->
+
+                        <form id="basic-info">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="dob">Date of Birth</label>
+                                    <input name="dob" type="date" required autocomplete="off">
+                                    <!-- <input name="dob" type="date" required autocomplete="off"> -->
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="sex">Gender</label>
+                                    <select class="sex select-css" name="sex" form="basic-info">
+                                        <option value="select">Please select one</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="not-say">Rather not say</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="blood">Blood Group</label>
+                                    <input name="blood" type="text"  autocomplete="off">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="height">Height (in centimeters)</label>
+                                    <input name="height" type="number"  autocomplete="off">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="weight">Weight (in kilograms)</label>
+                                    <input name="weight" type="number"  autocomplete="off">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="aadhar">Aadhar Number</label>
+                                    <input name="aadhar" type="number" placeholder="Not Necessary"  autocomplete="off">
+                                </div>
+
+                                <div class="col-md-12 text-center">
+
+                                    <button type="button" class="dark-btn clicker">Submit <i class="fas fa-arrow-circle-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card-body card-body-step-5">
+                        <div class="row">
+                                <div class="col-md-6 d-none form-img d-md-block p-0">
+                                    <img src="assets/img/logo.png" alt="GECR">
+                                </div>
+                                <div class="col-md-6 side-panel">
+                                    <h3>
+                                        You have been registered successfully. <p></p>
+                                        Please Log in to continue.
+                                    </h3>
+                                    <a href="login.html" class="dark-btn">
+                                        Log in
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+   </div>
+
+    <footer class="footer page-footer font-small text-center foot-bg">
+        <i class="far fa-copyright"></i>
+        2020 Endgame v0.0.1 | Developers
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+// Colors
+$color-1:#f6f6fd;
+$color-2:#ffffff;
+$color-3: #000;
+$color-4: #fa9950cc;
+// $color-4: #ec8234a3;
+
+@mixin easeOut{
+    transition: all 0.3s ease-in;
+}
+
+@mixin easeInOut{
+    transition: all 0.3s ease-in-out;
+}
+
+.dark-btn{
+    background: $color-4;
+    color: $color-2;
+
+    width: 200px;
+    border-radius: 0.5rem;
+    border: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+    
+    cursor: pointer;
+    box-shadow:0 10px 10px -8px rgba(0,0,0,0.48);
+    outline: none;
+    @include easeInOut;
+
+    &:hover{
+        transform: translate(0px, -5px);
+        color: $color-2;
+    }
+}
+
+.light-btn{
+    background: $color-2;
+    color: $color-4;
+
+    width: 200px;
+    border-radius: 0.5rem;
+    border: 2px solid $color-4;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+    
+    cursor: pointer;
+    box-shadow:0 10px 10px -8px rgba(0,0,0,0.48);
+
+    @include easeInOut;
+
+    &:hover{
+        transform: translate(0px, -5px);
+        color: $color-4;
+        text-decoration: none;
+    }
+}

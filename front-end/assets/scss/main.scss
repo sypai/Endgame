@@ -1,0 +1,19 @@
+@import "config";
+@import "1-home/home-index";
+@import "2-accounts/accounts-index";
+
+*{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+body {
+    margin: 0;
+    background: $color-1;
+    color: $color-3;
+}
+
+@import "0-mobile/mobile-index";
